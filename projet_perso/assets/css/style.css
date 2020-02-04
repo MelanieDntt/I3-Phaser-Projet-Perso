@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  background-image: url("../img/sky.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Kavoon", cursive;
+  font-size: 50px;
+}
+
+.page_accueil {
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
+
+.loose,
+.won {
+  font-size: 50px;
+}
+
+@keyframes catnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.cat {
+  animation: catnimation 3s infinite;
+}

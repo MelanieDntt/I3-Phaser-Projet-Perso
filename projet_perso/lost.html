@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./assets/img/catStop.png" />
+    <title>Game - Eugene the cat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kavoon|Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container page_accueil">
+        <h1>
+          Oh no! Eugene got lost
+          <i class="material-icons loose">rowing</i>
+        </h1>
+        <a class="waves-effect waves-light btn green accent-4">
+          <i class="material-icons left">refresh</i>
+          Retry
+        </a>
+        <a class="waves-effect waves-light btn home deep-orange accent-2">
+          <i class="material-icons left">home</i>
+          Home
+        </a>
+      </section>
+    </main>
+
+    <script>
+      let play = document.querySelector(".btn");
+      let home = document.querySelector(".home");
+
+      play.addEventListener("click", function() {
+        location.replace("./game.html");
+      });
+      home.addEventListener("click", () => {
+        location.replace("./index.html");
+      });
+    </script>
+  </body>
+</html>
